@@ -1,0 +1,19 @@
+<td><a href="/livro/novo"> Adicionar um Livro</a></td>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Título</th>
+        <th>Gênero</th>
+        <th>Autor</th>
+    </tr>
+    {% for livro in lista %}
+        <tr>
+            <td>{{ livro.id }}</td>
+            <td>{{ livro.titulo }}</td>
+            <td>{{ livro.genero }}</td>
+            <td>{{ livro.autor }}</td>
+            <td><a href="/livro/{{ livro.id }}">Editar</a></td>
+            <td><a href="/livro/remover/{{ livro.id }}">Remover</a></td>            
+        </tr>
+    {% endfor %}
+</table>

@@ -1,0 +1,18 @@
+create table livro
+(	id SERIAL not null,
+	titulo VARCHAR(100) not null,
+	genero VARCHAR(100) not null,
+	autor VARCHAR(100) not null,
+	CONSTRAINT pk_livro PRIMARY KEY(id) 
+);
+
+insert into livro (titulo, genero, autor) values
+	
+	('Percy Jackson e o Ladrão de Raios",'Fantasia','Rick Riordan'),
+	('Percy Jackson e o Mar de Monstros','Fantasia','Rick Riordan'),
+	('Harry Potter','Fantasia','J. K. Rowling'),
+	('Steve Jobs','Biografia','Walter Isaacson'),
+	('Revolução dos Bichos','Fábula','George Orwell'),
+	('Quincas Borba','Romance','Machado de Assis'),
+	('Turma da Mônica','Gibi','Maurício de Sousa'),
+	('Sítio do Picapau Amarelo','Infantil','Monteiro Lobato');

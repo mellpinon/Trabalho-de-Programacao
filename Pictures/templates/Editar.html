@@ -1,0 +1,9 @@
+<form action="{{ url_for("editar") }}" method="post">
+<input type="hidden" id="id" name="id" value="{{ livro.id }}">
+<label for="titulo"> Titulo: </label>
+<input type="text" id="titulo" name="titulo" placeholder="Preencha o titulo do livro " value="{{ livro.titulo }}">
+<label for="genero">Genero:</label>
+<input type="text" id="genero" name="genero" placeholder="Preencha o Gênero do livro: " value="{{ livro.genero }}">
+<label for="autor"> Autor: </label>
+<input type="text" id="autor" name="autor" placeholder="Preencha o Autor do livro: " value="{{ livro.autor }}">
+<button type="submit">Salvar</button>
